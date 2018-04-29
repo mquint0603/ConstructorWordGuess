@@ -1,20 +1,15 @@
 var Word = require("./word.js")
 var inquirer = require("inquirer")
 
-const wordArray = ["dog", "aardvark", "anteater", "moose", "zebra", "catepillar", "shark", "cat"]
+const wordArray = ["dog", "aardvark", "anteater", "moose", "zebra", "catepillar", "shark", "cat", "mouse"]
 var usedGuesses = 0;
 var totalGuesses = ""
 var correctGuesses = 0;
 var randomWord = ""
 var target = ""
 
-function pickWord() {
-    randomWord = wordArray[Math.floor(Math.random() * wordArray.length)]
-}
-
-
 function startGame(){
-    pickWord();
+    randomWord = wordArray[Math.floor(Math.random() * wordArray.length)]
     totalGuesses = randomWord.length + 6
     target = new Word(randomWord)
     // console.log(target)

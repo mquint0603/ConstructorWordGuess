@@ -18,6 +18,3 @@ var Letter = function (letter){
 }
 
 module.exports = Letter;
-
-// var test = new Letter("y")
-// test.display()

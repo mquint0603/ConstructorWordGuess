@@ -1,1 +1,2 @@
-# ConstructorWordGuess
+# Constructor Word Guess
+Guess which animal!
