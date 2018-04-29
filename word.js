@@ -11,16 +11,16 @@ var Word = function(word){
             // shownCharacter.display();
         }
     }
-    this.guessed = false;
+    // this.guessed = false;
     this.showWord = function(){
         let wordString = ""
         this.letterObjects.forEach((letter) =>{
-            wordString += letter.display()
+            wordString += letter.display() + " "
         })
         console.log(wordString)
-        if (wordString === this.word){
-            this.guessed = true;
-        }
+        // if (wordString === this.word){
+        //     this.guessed = true;
+        // }
     }
     this.takeGuess = function(char){
         for(i = 0; i < this.letterObjects.length; i++){

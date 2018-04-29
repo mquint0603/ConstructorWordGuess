@@ -11,7 +11,7 @@ var Letter = function (letter){
     this.check = function(char){
         if (char === this.character){
             this.correct = true;
-            console.log("Correct!")
+            console.log("Correct!"+ `\n`)
             this.display()
         }
     }
